@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTVG - Sitio oficial</title>
+    <link rel="shortcut icon" href="img/logo-negro.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href= "estilos.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="array_discos.js"></script>
+    <script src="array_integrantes.js"></script>
+    <script src="array_shows.js"></script>
+    <script src="array_slider.js"></script>
+    <script src="codigo.js"></script>
+</head>
+<body>
+    <nav class="container">
+        <div class="contenedor">
+            <a href="index.html">
+                <img src="img/logo-blanco.svg" alt="logo ntvg">
+            </a>
+            <div id="menu">
+                <a href="#informacion">Información</a>
+                <a href="#discos">Discos</a>
+                <a href="#integrantes" >Integrantes</a>
+                <a href="#slider">Galeria</a>
+                <a href="#shows">Shows</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </div>  
+    </nav>
+    <header>
+        <div class="contenedor">
+            <div id="modal">
+                <div id="modalInfo">
+                    <p id="cerrar"><i class="fas fa-times"></i></p>
+                    <div id="modalInfoContent"></div>
+                </div>
+            </div>
+            <h1>NTVG</h1>
+            <h2>Una banda con historia</h2>
+        </div> 
+    </header>
+    <section id="informacion">
+        <div class="contenedor">
+            <div>
+                <h2>Información</h2>
+                <p>No Te Va Gustar es una banda de rock nacida en Montevideo, Uruguay, en el año 1994 cuando 
+                un grupo de amigos del liceo de 16 años decidieron armar una banda y presentarse en un 
+                festival en una plaza del barrio</p> <br>
+                <p>Con más de 25 años de trayectoria, NTVG se ha convertido en una de las bandas de rock en
+                español más convocantes de Latinoamércia. A lo largo de su carrera ha desarrollado importantes
+                giras por el mundo, recorriendo Sudamérica entera y países como Cuba, Panamá, México, Estados Unidos, 
+                Alemania, Austria, Suiza, Inglaterra y España.</p> <br>
+                <p>Sus presentaciones en vivo son poderosas, precisas y refinadas. Siempre con un sonido de rock, fusiona 
+                distintos géneros musicales como el reggae, el folk, la murga o el ska en base a las influencias de cada uno 
+                de sus miembros.</p> <br>
+                <p>La banda es apasionada por los procesos de grabación y la búsqueda y exploración de sonidos nuevos en cada 
+                uno de sus álbumes. Todos sus discos han alcanzado status Oro o Platino y se han editado en Estados Unidos, España, 
+                México, Colombia, Venezuela, Perú, Chile, Uruguay y Argentina.</p>
+            </div>
+            <div id="randomInicio">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="integrantes">
+        <div class="contenedor">
+            <h2>Integrantes</h2>
+            <div id="ampliacion_integrantes">
+                <div id="informacionIntegrantes">
+                    <p id="cerrarIntegrantes"><i class="fas fa-times"></i></p>
+                    <div id="inforIntegrantes"></div>  
+                </div>
+
+            </div>
+
+
+
+
+        
+    </section>
+
+    <section id="discos">
+        <div class="contenedor">
+            <h2>Discos</h2>
+            <input type="text" name="" id="busquedaNombres" placeholder="Buscar canción por nombre">
+            <div id="cancionesContenedor">
+            
+            </div>
+        </div>
+        <div id="ampliacion_discos">
+            
+            <div id="infor">
+                <p id="cerrarDiscos"><i class="fas fa-times"></i></p>
+                <div id="inforContent"></div>  
+            </div>
+        </div>
+        <button class="load_more">Mostrar más</button>
+        <button class="load_less">Mostrar menos</button>
+        </section>
+
+    <section id="shows">
+        
+        <div class="contenedor">
+            
+            <h2>Shows</h2>
+            <select name="" id="departamentos">
+                <option value="todos">Todos</option>
+            </select>
+            <select name="" id="filtracion">
+                <option value="reciente">Ordenar por: Más reciente</option>
+                <option value="lejano">Más lejano</option>
+                <option value="menor">Menor precio</option>
+                <option value="mayor" >Mayor precio</option>
+            </select>
+            <div class="listashows"></div>
+        </div> 
+        <div id="ampliacion_formulario">
+            
+            <div id="ventana">
+                <p id="cerrarForm"><i class="fas fa-times"></i></p>
+                <div id="contenido"></div>  
+                
+            </div>
+
+    </section>
+    <section id="slider">
+        <div class="contenedor">
+            <h2>Slider</h2>
+            
+            
+            <div id="sliderFotos">
+                <div id="botones">
+                    <p id="retroceder"><i class="fas fa-arrow-left"></i></p>
+                    <p id="avanzar"><i class="fas fa-arrow-right"></i></p>
+                </div>
+                <h4 id="descripcion"></h4>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contenedor">
+                <div class="columnas3">
+                    <div>
+                        <img src="img/logo-blanco.svg" alt="logo ntvg"> 
+                    </div>
+                    <div>
+                        <h4>Contacto</h4>
+                        <p>Managment: rafaelnavarro@gmail.com</p>
+                        <p>Booking: cristinasanchez@gmail.com</p>
+                        <p>Prensa: eduardolopez@gmail.com</p>
+                    </div>
+                    <div>
+                        <h4>Redes sociales</h4>
+                        <div class="redes">
+                            <a href="https://open.spotify.com/artist/4ZDoy7AWNgQVmX7T0u0B1j" target="_blank"><i class="fab fa-spotify"></i></a>
+                            <a href="https://www.youtube.com/channel/UCe5tgyOlUWikwiYHEQ02L2Q" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://twitter.com/ntvgoficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://es-la.facebook.com/notevagustaroficial" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
